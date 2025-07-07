@@ -1,99 +1,73 @@
-/* Overall styles */
+/* Reset & Body */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
-  animation: fadeIn 1.2s ease-in-out;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Header styling */
-header {
-  background-color: #4CAF50;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
-  padding: 20px;
   text-align: center;
-  animation: fadeIn 1.5s ease-in-out;
+  min-height: 100vh;
 }
 
-/* Section cards */
-section {
-  padding: 20px;
-  margin: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+/* Header */
+header {
+  padding: 60px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffcc;
 }
 
-/* Heading colors */
-h2 {
-  color: #4CAF50;
+header p {
+  font-size: 18px;
+  color: #cccccc;
 }
 
-/* Project links */
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+/* Project Section */
+#projects {
+  padding: 40px 20px;
 }
 
-ul li a {
-  color: #4CAF50;
+.project-buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  color: black;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #00ffc3;
 }
 
-ul li a:hover {
-  color: #2e7d32;
-  text-decoration: underline;
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00ccff, #00ff99);
+  box-shadow: 0 0 20px #00ffd5;
+}
+
+/* Description Text */
+.description {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  font-size: 16px;
+  color: #dddddd;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 10px;
-  background: #ddd;
-  margin-top: 20px;
+  padding: 20px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
-}
-/* Project button container */
-.project-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-/* Animated button style */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(135deg, #4CAF50, #2e7d32);
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.4s ease-in-out;
-}
-
-/* Hover animation */
-.btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #66bb6a, #1b5e20);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  color: #aaa;
 }
